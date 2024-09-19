@@ -49,13 +49,13 @@
     @apply font-inkination uppercase font-black text-h1 leading-heading;
   }
   h2 {
-    @apply font-bold text-5xl leading-heading uppercase pb-4;
+    @apply font-bold text-h2 leading-heading uppercase pb-4;
   }
   h3 {
-    @apply font-bold text-3xl leading-heading uppercase pb-2;
+    @apply font-bold text-h3 leading-heading uppercase pb-2;
   }
   h4 {
-    @apply leading-heading text-base text-2xl pb-2;
+    @apply font-bold text-h4 leading-heading uppercase pb-2 pb-2;
   }
   p {
     @apply font-prompt;
