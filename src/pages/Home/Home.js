@@ -38,7 +38,7 @@ const HeroSection = () => {
         <h1 className='text-[18vw] hidden'>Artiphys</h1>
       </div>
       <Marquee>
-        <div className='border-solid border-dark border-t-4 border-b-4 flex border-x-0'>
+        <div className='border-solid border-dark border-t-4 border-b-4 flex'>
           {Array(5)
             .fill(1)
             .map((i) => (

@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className='bg-base fixed w-full z-40 art-border'>
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div className='max-w-5xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between h-20'>
           <div className='flex items-center'>
             {/* Logo Section */}
@@ -34,7 +34,7 @@ const Navbar = () => {
           <div className='hidden md:flex items-center space-x-4'>
             {NAV_LINKS.map((link) => (
               <a href={link.url} className='text-dark hover:text-primary'>
-                <h2>{link.text}</h2>
+                <h3>{link.text}</h3>
               </a>
             ))}
           </div>

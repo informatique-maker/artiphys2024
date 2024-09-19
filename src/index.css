@@ -92,7 +92,7 @@
 }
 
 .art-border {
-  @apply border-solid border-dark border-4;
+  @apply border-dark border-t-4 border-b-4;
 }
 
 .section-container {
