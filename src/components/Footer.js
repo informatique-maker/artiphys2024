@@ -1,10 +1,60 @@
 import React from 'react';
+import Marquee from 'react-fast-marquee';
+
+/* import enzoLogo from '../assets/images/partners/enzo-loca.png';
+import forumLogo from '../assets/images/partners/forum.svg';
+import migrosLogo from '../assets/images/partners/migros.png';
+import agepLogo from '../assets/images/partners/agep.svg';
+import makitaLogo from '../assets/images/partners/makita.jpg';
+import morandLogo from '../assets/images/partners/morand.png';
+import infmaniakLogo from '../assets/images/partners/infmaniak.svg';
+import accoustiqueLogo from '../assets/images/partners/accoustique.png'; */
+
+const PARTNERS_LINKS = [
+  {
+    url: 'https://www.enzo-location.ch/',
+    src: '/images/partners/enzo-loca.png',
+  },
+  {
+    url: 'https://www.infomaniak.com/fr/',
+    src: '/images/partners/infmaniak.svg',
+  },
+  {
+    url: 'https://engagement.migros.ch/fr/pour-cent-culturel',
+    src: '/images/partners/migros.png',
+  },
+  {
+    url: 'https://www.makita.ch/',
+    src: '/images/partners/makita.jpg',
+    color: '#fe0500',
+  },
+  {
+    url: 'https://www.morand.ch/',
+    src: '/images/partners/morand.png',
+  },
+  {
+    url: 'https://www.forum-epfl.ch/',
+    src: '/images/partners/forum.svg',
+  },
+  {
+    url: 'https://agepoly.ch/',
+    src: '/images/partners/agep.svg',
+  },
+  {
+    url: 'https://p-p-s.ch/',
+    src: '/images/partners/pps.png',
+  },
+  {
+    url: 'https://signature-acoustique.ch/',
+    src: '/images/partners/accoustique.png',
+  },
+];
 
 function Footer() {
   return (
     <div className='bg-base w-full art-border'>
       <div className='max-w-5xl mx-auto'>
-        <div className='section-container w-full p-9 text-black flex flex-col sm:flex-row justify-around items-start max-w-[400px] gap-14'>
+        <div className='w-full p-9 pb-16 text-black flex flex-col sm:flex-row justify-around items-start gap-14'>
           <div className='flex-1 flex flex-col sm:flex-row items-center sm:items-end gap-8 mx-auto'>
             <div>
               <h2 className='text-center sm:text-left pb-h2'>Contact</h2>
@@ -63,7 +113,25 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className='flex flex-col sm:flex-row justify-between items-center sm:items-start px-9 pb-1'>
+        <Marquee>
+          <div className='flex items-stretch'>
+            {PARTNERS_LINKS.map((partner) => (
+              <div
+                className='px-4 flex items-center rounded-lg mr-3'
+                style={{ backgroundColor: partner.color || 'white' }}
+              >
+                <a
+                  href={partner.url}
+                  className='flex items-center justify-center'
+                  key={partner.url}
+                >
+                  <img src={partner.src} alt='partner' width={120} />
+                </a>
+              </div>
+            ))}
+          </div>
+        </Marquee>
+        <div className='flex flex-col sm:flex-row justify-between items-center sm:items-start px-9 pt-16  pb-1'>
           <p className='font-inkination text-dark uppercase text-[0.8rem]'>
             Site web designé par{' '}
             <a className='text-dark underline' href='https://mateo.tiedra.com/'>

@@ -66,7 +66,7 @@ const Navbar = () => {
         className='md:hidden transition-all overflow-hidden border-solid border-dark border-3'
         style={{ height: isOpen ? '75vh' : 0 }}
       >
-        <div className='h-[75vh] flex flex-col justify-center items-center pb-20 '>
+        <div className='h-[75vh] flex flex-col justify-center items-center pb-20 gap-4'>
           {NAV_LINKS.map((link) => (
             <a href={link.url} className='text-dark hover:text-primary'>
               <h2>{link.text}</h2>
