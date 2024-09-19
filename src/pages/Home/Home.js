@@ -9,16 +9,16 @@ import React, {
 import Marquee from 'react-fast-marquee';
 
 import Footer from '../../components/Footer';
-import whiteLogo from '../../assets/images/white-logo.png';
+import blackLogo from '../../assets/images/dark-logo.png';
 import Navbar from '../../components/Navbar';
 
 const MarqueeContent = () => {
   return (
     <div className='flex items-center gap-3 py-1 pr-3 bg-base'>
       <h2 className='pb-0 text-xl font-semibold text-dark'>Artiphys 2025</h2>
-      <img src={whiteLogo} className='h-[0.9rem]' alt='logo' />
+      <img src={blackLogo} className='h-[0.9rem]' alt='logo' />
       <h2 className='pb-0 text-xl font-semibold text-dark'>14 mars 2025</h2>
-      <img src={whiteLogo} className='h-[0.9rem]' alt='logo' />
+      <img src={blackLogo} className='h-[0.9rem]' alt='logo' />
     </div>
   );
 };

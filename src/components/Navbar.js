@@ -8,6 +8,22 @@ const NAV_LINKS = [
     url: '/',
     text: 'Accueil',
   },
+  {
+    url: '/',
+    text: 'News',
+  },
+  {
+    url: '/',
+    text: 'Partenaires',
+  },
+  {
+    url: '/',
+    text: 'Prévention',
+  },
+  {
+    url: '/',
+    text: 'Contact',
+  },
 ];
 
 const Navbar = () => {
@@ -21,13 +37,9 @@ const Navbar = () => {
             {/* Logo Section */}
             <a
               href='/'
-              className='text-xl font-bold text-gray-900 flex justify-center items-center'
+              className='text-xl font-bold text-gray-900 flex justify-center items-center  relative -left-3'
             >
-              <img
-                src={cuteLogo}
-                alt='cute logo'
-                className='h-20 relative right-3'
-              />
+              <img src={cuteLogo} alt='cute logo' className='h-20' />
             </a>
           </div>
           {/* Desktop Menu */}
