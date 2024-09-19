@@ -23,8 +23,8 @@ module.exports = {
       fontSize: {
         base: '20px', // Default font size
         h1: '6rem', //
-        h2: '4.5rem', // Equivalent to text-3xl
-        h3: '3rem', // Equivalent to text-2xl
+        h2: '1.8rem', // Equivalent to text-3xl
+        h3: '1.8rem', // Equivalent to text-2xl
         h4: '1.8rem', // Equivalent to text-xl
         h5: '1.125rem', // Equivalent to text-lg
         h6: '1rem', // Equivalent to text-base

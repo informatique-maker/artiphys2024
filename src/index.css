@@ -49,13 +49,13 @@
     @apply font-inkination uppercase font-black text-h1 leading-heading;
   }
   h2 {
-    @apply font-bold text-h2 leading-heading uppercase pb-4;
+    @apply font-bold text-h2 leading-heading uppercase;
   }
   h3 {
-    @apply font-bold text-h3 leading-heading uppercase pb-2;
+    @apply font-bold text-h3 leading-heading uppercase;
   }
   h4 {
-    @apply font-bold text-h4 leading-heading uppercase pb-2 pb-2;
+    @apply font-bold text-h4 leading-heading uppercase;
   }
   p {
     @apply font-prompt;
@@ -67,7 +67,7 @@
     @apply bg-dark;
   }
   html {
-    @apply text-base font-prompt leading-base pb-1;
+    @apply text-base font-prompt leading-base;
   }
 }
 
@@ -77,6 +77,22 @@
 
 .styled-link > a {
   @apply font-bold underline text-primary;
+}
+
+.pb-h1 {
+  @apply pb-8;
+}
+
+.pb-h2 {
+  @apply pb-4;
+}
+
+.pb-h3 {
+  @apply pb-2;
+}
+
+.art-border {
+  @apply border-solid border-dark border-4;
 }
 
 .section-container {

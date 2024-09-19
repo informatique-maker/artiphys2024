@@ -16,11 +16,11 @@ import {
 
 function Footer() {
   return (
-    <div className='bg-base w-full'>
+    <div className='bg-base w-full art border'>
       <div className='section-container w-full p-9 text-black flex flex-col sm:flex-row justify-around items-start max-w-[400px] gap-14'>
         <div className='flex-1 flex flex-col sm:flex-row items-start sm:items-end gap-8'>
           <div>
-            <h4>Contact</h4>
+            <h2>Contact</h2>
             <a href='mailto:contact@artiphys.ch' className='text-black  '>
               contact@artiphys.ch
             </a>
@@ -46,9 +46,9 @@ function Footer() {
             />
           </div>
         </div>
-        <div className='flex-1 text-dark'>
-          <h4>Nos réseaux</h4>
-          <div className='flex flex-col gap-1 margin-right-auto'>
+        <div className='flex-1 text-dark flex flex-col items-right'>
+          <h2 className='text-right'>Nos réseaux</h2>
+          <div className='inline-flex flex-col gap-1 items-end'>
             <a
               className='text-dark flex flex-row items-center'
               href='https://www.instagram.com/artiphysfestival/'
