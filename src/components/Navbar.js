@@ -19,7 +19,7 @@ const NAV_LINKS = [
     text: 'Prévention',
   },
   {
-    url: '/',
+    url: '/contact',
     text: 'Contact',
   },
 ];
