@@ -4,9 +4,9 @@ import Marquee from 'react-fast-marquee';
 
 import { PARTNERS_LINKS } from '../config/AppConfig';
 
-function Footer() {
+function Footer({ light = false }) {
   return (
-    <div className='w-full'>
+    <div className={'w-full' + (light ? ' light-container' : '')}>
       <div className='max-w-5xl mx-auto'>
         <div className='w-full p-9 pb-16 flex flex-col sm:flex-row justify-around items-start gap-14'>
           <div className='flex-1 flex flex-col sm:flex-row items-center sm:items-end gap-8 mx-auto'>
