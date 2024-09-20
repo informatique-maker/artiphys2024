@@ -33,8 +33,8 @@ function Prevention() {
           <div className='flex gap-5 flex-wrap justify-center'>
             <div className='flex-centered'>
               <p className='pb-2'>Charte Festivaliers</p>
-              <iframe
-                src={'/pdfs/charte_festivaliers.pdf'}
+              <object
+                data='/pdfs/charte_festivaliers.pdf'
                 width='350px'
                 height='450px'
                 style={{ border: 'none' }}
@@ -43,8 +43,8 @@ function Prevention() {
             </div>
             <div className='flex-centered'>
               <p className='pb-2'>Charte Staffs</p>
-              <iframe
-                src={'/pdfs/charte_staff.pdf'}
+              <object
+                data={'/pdfs/charte_staff.pdf'}
                 width='350px'
                 height='450px'
                 style={{ border: 'none' }}
