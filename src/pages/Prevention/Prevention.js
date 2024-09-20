@@ -10,10 +10,6 @@ const TextSection = ({ title, text, light = false }) => (
   </div>
 );
 
-const options = {
-  cMapUrl: '/pdfs/charte_festivaliers.pdf',
-};
-
 function Prevention() {
   return (
     <>
