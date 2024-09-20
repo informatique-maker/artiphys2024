@@ -13,7 +13,7 @@ const NAV_LINKS = [
     text: 'Partenaires',
   },
   {
-    url: '/',
+    url: '/prevention',
     text: 'Prévention',
   },
   {
