@@ -9,7 +9,7 @@ const NAV_LINKS = [
     text: 'Actu',
   },
   {
-    url: '/',
+    url: '/partenaires',
     text: 'Partenaires',
   },
   {
@@ -24,56 +24,64 @@ const NAV_LINKS = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to handle mobile menu toggle
-
+  const nabBarHeight = 'h-20';
   return (
-    <nav className='bg-base fixed w-full z-40 art-border'>
-      <div className='md:hidden absolute left-1/2 -translate-x-1/2 h-20 flex-centered z-30'>
-        <h3 className='text-dark'>Artiphys</h3>
-      </div>
-      <div className='max-w-5xl mx-auto px-4 sm:px-6 lg:px-8'>
-        <div className='flex justify-between h-20'>
-          <div className='flex items-center'>
-            {/* Logo Section */}
-            <a
-              href='/'
-              className='text-xl font-bold text-gray-900 flex justify-center items-center  relative -left-3'
-            >
-              <img src={cuteLogo} alt='cute logo' className='h-20' />
-            </a>
+    <>
+      <div className={nabBarHeight} />
+      <nav className='bg-base absolute top-0 w-full z-40 art-border'>
+        <div
+          className={
+            'md:hidden absolute left-1/2 -translate-x-1/2 flex-centered z-30 ' +
+            nabBarHeight
+          }
+        >
+          <h3 className='text-dark'>Artiphys</h3>
+        </div>
+        <div className='max-w-5xl mx-auto px-4 sm:px-6 lg:px-8'>
+          <div className={'flex justify-between ' + nabBarHeight}>
+            <div className='flex items-center'>
+              {/* Logo Section */}
+              <a
+                href='/'
+                className='text-xl font-bold text-gray-900 flex justify-center items-center  relative -left-3'
+              >
+                <img src={cuteLogo} alt='cute logo' className='h-20' />
+              </a>
+            </div>
+            {/* Desktop Menu */}
+            <div className='hidden md:flex items-center space-x-6'>
+              {NAV_LINKS.map((link) => (
+                <a href={link.url} className='text-dark hover:text-primary'>
+                  <h4>{link.text}</h4>
+                </a>
+              ))}
+            </div>
+            {/* Mobile Menu Toggle */}
+            <div className='flex items-center md:hidden'>
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className='text-dark hover:text-primary focus:outline-none p-2 hover:cursor-pointer'
+              >
+                {isOpen ? <BiX size={40} /> : <BiMenu size={40} />}
+              </button>
+            </div>
           </div>
-          {/* Desktop Menu */}
-          <div className='hidden md:flex items-center space-x-6'>
+        </div>
+        {/* Mobile Menu */}
+        <div
+          className='md:hidden transition-all overflow-hidden border-solid border-dark border-3 relative'
+          style={{ height: isOpen ? '75vh' : 0 }}
+        >
+          <div className='h-[75vh] flex flex-col justify-center items-center pb-20 gap-12'>
             {NAV_LINKS.map((link) => (
               <a href={link.url} className='text-dark hover:text-primary'>
-                <h4>{link.text}</h4>
+                <h3>{link.text}</h3>
               </a>
             ))}
           </div>
-          {/* Mobile Menu Toggle */}
-          <div className='flex items-center md:hidden'>
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className='text-dark hover:text-primary focus:outline-none p-2 hover:cursor-pointer'
-            >
-              {isOpen ? <BiX size={40} /> : <BiMenu size={40} />}
-            </button>
-          </div>
         </div>
-      </div>
-      {/* Mobile Menu */}
-      <div
-        className='md:hidden transition-all overflow-hidden border-solid border-dark border-3 relative'
-        style={{ height: isOpen ? '75vh' : 0 }}
-      >
-        <div className='h-[75vh] flex flex-col justify-center items-center pb-20 gap-12'>
-          {NAV_LINKS.map((link) => (
-            <a href={link.url} className='text-dark hover:text-primary'>
-              <h3>{link.text}</h3>
-            </a>
-          ))}
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 

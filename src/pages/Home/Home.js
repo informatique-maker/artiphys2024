@@ -21,7 +21,7 @@ const MarqueeContent = () => {
 };
 const HeroSection = () => {
   return (
-    <div className='flex flex-col items-center pt-20'>
+    <div className='flex flex-col items-center'>
       <div className='relative w-full h-[66vh] flex justify-center items-center'>
         <video
           autoPlay
