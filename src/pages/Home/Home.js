@@ -1,10 +1,13 @@
 import React from 'react';
 
 import Marquee from 'react-fast-marquee';
+import { InstagramEmbed } from 'react-social-media-embed';
 
 import Footer from '../../components/Footer';
 import blackLogo from '../../assets/images/dark-logo.png';
 import Navbar from '../../components/Navbar';
+
+import { LATEST_NEWS_LINKS } from '../../config/AppConfig';
 
 const MarqueeContent = () => {
   return (
@@ -76,8 +79,15 @@ const HeroSection = () => {
 
 const LatestNewsSection = () => {
   return (
-    <div className='section-container light-container'>
-      <h2>Notre Actu</h2>
+    <div className='light-container'>
+      <div className='section-container flex-centered'>
+        <h2 className='pb-h2 text-center'>Notre Actu</h2>
+        <div>
+          {LATEST_NEWS_LINKS.map((link, index) => (
+            <InstagramEmbed key={index} url={link} width={328} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

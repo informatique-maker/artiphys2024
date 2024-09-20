@@ -27,6 +27,9 @@ const Navbar = () => {
 
   return (
     <nav className='bg-base fixed w-full z-40 art-border'>
+      <div className='md:hidden absolute left-1/2 -translate-x-1/2 h-20 flex-centered z-30'>
+        <h3 className='text-dark'>Artiphys</h3>
+      </div>
       <div className='max-w-5xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between h-20'>
           <div className='flex items-center'>
@@ -59,7 +62,7 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       <div
-        className='md:hidden transition-all overflow-hidden border-solid border-dark border-3'
+        className='md:hidden transition-all overflow-hidden border-solid border-dark border-3 relative'
         style={{ height: isOpen ? '75vh' : 0 }}
       >
         <div className='h-[75vh] flex flex-col justify-center items-center pb-20 gap-12'>

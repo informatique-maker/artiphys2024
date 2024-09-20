@@ -57,7 +57,7 @@ function Footer() {
         <div className='w-full p-9 pb-16 flex flex-col sm:flex-row justify-around items-start gap-14'>
           <div className='flex-1 flex flex-col sm:flex-row items-center sm:items-end gap-8 mx-auto'>
             <div>
-              <h2 className='text-center sm:text-left pb-h2'>Contact</h2>
+              <h3 className='text-center sm:text-left pb-h3'>Contact</h3>
               <p className='text-center sm:text-left'>
                 <a
                   href='mailto:contact@artiphys.ch'
@@ -74,7 +74,7 @@ function Footer() {
                 1015 Lausanne
               </p>
             </div>
-            <div className='overflow-hidden relative w-full rounded-lg'>
+            <div className='overflow-hidden relative rounded-lg'>
               <iframe
                 title='Google Map'
                 className='w-full h-[250px] sm:h-[150px] min-w-[150px] max-w-[300px]'
@@ -89,9 +89,9 @@ function Footer() {
             </div>
           </div>
           <div className='flex-1 text-base flex flex-col mx-auto'>
-            <h2 className='text-center text-inherit sm:text-right pb-h2'>
+            <h3 className='text-center text-inherit sm:text-right pb-h3'>
               Nos réseaux
-            </h2>
+            </h3>
             <div className='inline-flex flex-col gap-1 items-center sm:items-end'>
               <a
                 className='flex flex-row items-center text-inherit'
@@ -120,31 +120,31 @@ function Footer() {
             </div>
           </div>
         </div>
-        <Marquee>
-          <div className='flex items-stretch'>
-            {PARTNERS_LINKS.map((partner) => (
-              <a
-                href={partner.url}
-                className='px-4 flex items-center rounded-lg mr-3'
-                style={{ backgroundColor: partner.color || 'white' }}
-                key={partner.url}
-              >
-                <img src={partner.src} alt='partner' width={120} />
-              </a>
-            ))}
-          </div>
-        </Marquee>
-        <div className='flex flex-col sm:flex-row justify-between items-center sm:items-start px-9 pt-16  pb-1'>
-          <p className='font-inkination uppercase text-[0.8rem]'>
-            Site web designé par{' '}
-            <a className='underline' href='https://mateo.tiedra.com/'>
-              Mateo Tiedra
+      </div>
+      <Marquee>
+        <div className='flex items-stretch'>
+          {PARTNERS_LINKS.map((partner) => (
+            <a
+              href={partner.url}
+              className='px-4 flex items-center rounded-lg mr-3'
+              style={{ backgroundColor: partner.color || 'white' }}
+              key={partner.url}
+            >
+              <img src={partner.src} alt='partner' width={120} />
             </a>
-          </p>
-          <p className='font-inkination uppercase text-[0.8rem]'>
-            Copyright © Artiphys 2024
-          </p>
+          ))}
         </div>
+      </Marquee>
+      <div className='flex flex-col sm:flex-row justify-between items-center sm:items-start px-9 pt-16  pb-1 max-w-5xl mx-auto'>
+        <p className='font-inkination uppercase text-[0.8rem]'>
+          Site web designé par{' '}
+          <a className='underline' href='https://mateo.tiedra.com/'>
+            Mateo Tiedra
+          </a>
+        </p>
+        <p className='font-inkination uppercase text-[0.8rem]'>
+          Copyright © Artiphys 2024
+        </p>
       </div>
     </div>
   );
