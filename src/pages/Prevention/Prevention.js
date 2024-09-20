@@ -22,43 +22,45 @@ function Prevention() {
         </p>
       </div>
 
-      <div className={'section-container light-container'}>
-        <h3 className=' pb-h3 text-center'>RESPECT EN MILIEU FESTIF</h3>
-        <p className='text-center pb-6'>
-          En entrant ou en staffant sur le festival, je m’engage à avoir pris
-          connaissance, à accepter et respecter les chartes de conduite
-          respectueuse disponibles ci-dessous.
-        </p>
-        <div className='flex gap-5 flex-wrap justify-center'>
-          <div className='flex-centered'>
-            <p className='pb-2'>Charte Festivaliers</p>
-            <iframe
-              src={'/pdfs/charte_festivaliers.pdf'}
-              width='350px'
-              height='450px'
-              style={{ border: 'none' }}
-              title='Charte Festivaliers'
-            />
+      <div className='light-container'>
+        <div className='section-container'>
+          <h3 className=' pb-h3 text-center'>RESPECT EN MILIEU FESTIF</h3>
+          <p className='text-center pb-6'>
+            En entrant ou en staffant sur le festival, je m’engage à avoir pris
+            connaissance, à accepter et respecter les chartes de conduite
+            respectueuse disponibles ci-dessous.
+          </p>
+          <div className='flex gap-5 flex-wrap justify-center'>
+            <div className='flex-centered'>
+              <p className='pb-2'>Charte Festivaliers</p>
+              <iframe
+                src={'/pdfs/charte_festivaliers.pdf'}
+                width='350px'
+                height='450px'
+                style={{ border: 'none' }}
+                title='Charte Festivaliers'
+              />
+            </div>
+            <div className='flex-centered'>
+              <p className='pb-2'>Charte Staffs</p>
+              <iframe
+                src={'/pdfs/charte_staff.pdf'}
+                width='350px'
+                height='450px'
+                style={{ border: 'none' }}
+                title='Charte Staffs'
+              />
+            </div>
           </div>
-          <div className='flex-centered'>
-            <p className='pb-2'>Charte Staffs</p>
-            <iframe
-              src={'/pdfs/charte_staff.pdf'}
-              width='350px'
-              height='450px'
-              style={{ border: 'none' }}
-              title='Charte Staffs'
-            />
-          </div>
+          <p className='text-center pt-6'>
+            Pourquoi ces chartes ? À Artiphys, nous considérons qu’il est
+            essentiel que chacun·x·e puisse profiter de son temps sur le site du
+            festival en se sentant safe et respecté·x·e. Pour cette raison, nous
+            ne tolérons aucune sorte de discrimination ou de violence physique,
+            sexiste ou sexuelle, et avons mis en place différentes mesures pour
+            faire d’Artiphys un espace inclusif et bienveillant.
+          </p>
         </div>
-        <p className='text-center pt-6'>
-          Pourquoi ces chartes ? À Artiphys, nous considérons qu’il est
-          essentiel que chacun·x·e puisse profiter de son temps sur le site du
-          festival en se sentant safe et respecté·x·e. Pour cette raison, nous
-          ne tolérons aucune sorte de discrimination ou de violence physique,
-          sexiste ou sexuelle, et avons mis en place différentes mesures pour
-          faire d’Artiphys un espace inclusif et bienveillant.
-        </p>
       </div>
       <div>
         <div className='section-container many-cell-wrapper'>
