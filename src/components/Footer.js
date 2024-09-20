@@ -1,54 +1,8 @@
 import React from 'react';
+
 import Marquee from 'react-fast-marquee';
 
-/* import enzoLogo from '../assets/images/partners/enzo-loca.png';
-  import forumLogo from '../assets/images/partners/forum.svg';
-  import migrosLogo from '../assets/images/partners/migros.png';
-  import agepLogo from '../assets/images/partners/agep.svg';
-  import makitaLogo from '../assets/images/partners/makita.jpg';
-  import morandLogo from '../assets/images/partners/morand.png';
-  import infmaniakLogo from '../assets/images/partners/infmaniak.svg';
-  import accoustiqueLogo from '../assets/images/partners/accoustique.png'; */
-
-const PARTNERS_LINKS = [
-  {
-    url: 'https://www.enzo-location.ch/',
-    src: '/images/partners/enzo-loca.png',
-  },
-  {
-    url: 'https://www.infomaniak.com/fr/',
-    src: '/images/partners/infmaniak.svg',
-  },
-  {
-    url: 'https://engagement.migros.ch/fr/pour-cent-culturel',
-    src: '/images/partners/migros.png',
-  },
-  {
-    url: 'https://www.makita.ch/',
-    src: '/images/partners/makita.jpg',
-    color: '#fe0500',
-  },
-  {
-    url: 'https://www.morand.ch/',
-    src: '/images/partners/morand.png',
-  },
-  {
-    url: 'https://www.forum-epfl.ch/',
-    src: '/images/partners/forum.svg',
-  },
-  {
-    url: 'https://agepoly.ch/',
-    src: '/images/partners/agep.svg',
-  },
-  {
-    url: 'https://p-p-s.ch/',
-    src: '/images/partners/pps.png',
-  },
-  {
-    url: 'https://signature-acoustique.ch/',
-    src: '/images/partners/accoustique.png',
-  },
-];
+import { PARTNERS_LINKS } from '../config/AppConfig';
 
 function Footer() {
   return (
