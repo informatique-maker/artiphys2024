@@ -3,9 +3,11 @@ import React, { useState } from 'react';
 import cuteLogo from '../assets/images/cute-logo.png';
 import { BiMenu, BiX } from 'react-icons/bi';
 
+import { HashLink } from 'react-router-hash-link';
+
 const NAV_LINKS = [
   {
-    url: '/',
+    url: '/#news',
     text: 'Actu',
   },
   {
@@ -41,12 +43,12 @@ const Navbar = () => {
           <div className={'flex justify-between ' + nabBarHeight}>
             <div className='flex items-center'>
               {/* Logo Section */}
-              <a
-                href='/'
+              <HashLink
+                to='/'
                 className='text-xl font-bold text-gray-900 flex justify-center items-center  relative -left-3'
               >
                 <img src={cuteLogo} alt='cute logo' className='h-20' />
-              </a>
+              </HashLink>
             </div>
             {/* Desktop Menu */}
             <div className='hidden md:flex items-center space-x-6'>
@@ -74,9 +76,9 @@ const Navbar = () => {
         >
           <div className='h-[75vh] flex flex-col justify-center items-center pb-20 gap-12'>
             {NAV_LINKS.map((link) => (
-              <a href={link.url} className='text-dark hover:text-primary'>
+              <HashLink to={link.url} className='text-dark hover:text-primary'>
                 <h3>{link.text}</h3>
-              </a>
+              </HashLink>
             ))}
           </div>
         </div>

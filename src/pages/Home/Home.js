@@ -79,7 +79,7 @@ const HeroSection = () => {
 
 const LatestNewsSection = () => {
   return (
-    <div className='light-container'>
+    <div className='light-container' id='news'>
       <div className='section-container flex-centered'>
         <h2 className='pb-h2 text-center'>Notre Actu</h2>
         <div>
