@@ -6,11 +6,7 @@ import { BiMenu, BiX } from 'react-icons/bi';
 const NAV_LINKS = [
   {
     url: '/',
-    text: 'Accueil',
-  },
-  {
-    url: '/',
-    text: 'News',
+    text: 'Actu',
   },
   {
     url: '/',
@@ -43,10 +39,10 @@ const Navbar = () => {
             </a>
           </div>
           {/* Desktop Menu */}
-          <div className='hidden md:flex items-center space-x-4'>
+          <div className='hidden md:flex items-center space-x-6'>
             {NAV_LINKS.map((link) => (
               <a href={link.url} className='text-dark hover:text-primary'>
-                <h3>{link.text}</h3>
+                <h4>{link.text}</h4>
               </a>
             ))}
           </div>
@@ -66,10 +62,10 @@ const Navbar = () => {
         className='md:hidden transition-all overflow-hidden border-solid border-dark border-3'
         style={{ height: isOpen ? '75vh' : 0 }}
       >
-        <div className='h-[75vh] flex flex-col justify-center items-center pb-20 gap-4'>
+        <div className='h-[75vh] flex flex-col justify-center items-center pb-20 gap-12'>
           {NAV_LINKS.map((link) => (
             <a href={link.url} className='text-dark hover:text-primary'>
-              <h2>{link.text}</h2>
+              <h3>{link.text}</h3>
             </a>
           ))}
         </div>

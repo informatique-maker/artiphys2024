@@ -9,9 +9,9 @@ import Navbar from '../../components/Navbar';
 const MarqueeContent = () => {
   return (
     <div className='flex items-center gap-3 py-1 pr-3 bg-base'>
-      <h2 className='pb-0 text-xl font-semibold text-dark'>Artiphys 2025</h2>
+      <h3 className='pb-0 text-xl font-semibold text-dark'>Artiphys 2025</h3>
       <img src={blackLogo} className='h-[0.9rem]' alt='logo' />
-      <h2 className='pb-0 text-xl font-semibold text-dark'>14 mars 2025</h2>
+      <h3 className='pb-0 text-xl font-semibold text-dark'>14 mars 2025</h3>
       <img src={blackLogo} className='h-[0.9rem]' alt='logo' />
     </div>
   );
@@ -43,33 +43,41 @@ const HeroSection = () => {
       <div className='hidden sm:flex justify-around max-w-7xl px-5 py-12 w-full'>
         <div className='flex flex-col items-center flex-1'>
           <h1>3</h1>
-          <h2 className='uppercase'>Scènes</h2>
+          <h3 className='uppercase'>Scènes</h3>
         </div>
         <div className='flex flex-col items-center flex-1'>
           <h1>1200</h1>
-          <h2 className='uppercase'>FESTIVALIER.X.ES</h2>
+          <h3 className='uppercase'>FESTIVALIER.X.ES</h3>
         </div>
         <div className='flex flex-col items-center flex-1'>
           <h1>4</h1>
-          <h2 className='uppercase'>Bars</h2>
+          <h3 className='uppercase'>Bars</h3>
         </div>
       </div>
       <div className='inline-flex sm:hidden flex-col items-center gap-5 py-12'>
         <div className='flex flex-col items-center flex-1'>
           <h1>1200</h1>
-          <h2 className='uppercase'>FESTIVALIER.X.ES</h2>
+          <h3 className='uppercase'>FESTIVALIER.X.ES</h3>
         </div>
         <div className='flex w-full justify-between '>
           <div className='flex flex-col items-center'>
             <h1>3</h1>
-            <h2 className='uppercase'>Scènes</h2>
+            <h3 className='uppercase'>Scènes</h3>
           </div>
           <div className='flex flex-col items-center'>
             <h1>4</h1>
-            <h2 className='uppercase'>Bars</h2>
+            <h3 className='uppercase'>Bars</h3>
           </div>
         </div>
       </div>
+    </div>
+  );
+};
+
+const LatestNewsSection = () => {
+  return (
+    <div className='section-container light-container'>
+      <h2>Notre Actu</h2>
     </div>
   );
 };
@@ -79,6 +87,7 @@ function Home() {
     <>
       <Navbar />
       <HeroSection />
+      <LatestNewsSection />
       <Footer />
     </>
   );
