@@ -14,7 +14,7 @@ const MarqueeContent = () => {
     <div className='flex items-center gap-3 py-1 pr-3 bg-base'>
       <h3 className='pb-0 text-xl font-semibold text-dark'>Artiphys 2025</h3>
       <img src={blackLogo} className='h-[0.9rem]' alt='logo' />
-      <h3 className='pb-0 text-xl font-semibold text-dark'>14 mars 2025</h3>
+      <h3 className='pb-0 text-xl font-semibold text-dark'>mars 2025</h3>
       <img src={blackLogo} className='h-[0.9rem]' alt='logo' />
     </div>
   );
@@ -27,6 +27,7 @@ const HeroSection = () => {
           autoPlay
           loop
           muted
+          playsInline
           className='absolute object-cover w-full h-full -z-10'
         >
           <source src='/videos/home.mp4' type='video/mp4' />
