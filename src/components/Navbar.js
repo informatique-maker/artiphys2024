@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <>
       <div className={nabBarHeight} />
-      <nav className='bg-base absolute top-0 w-full z-40 art-border'>
+      <nav className='bg-base fixed top-0 w-full z-40 art-border'>
         <div
           className={
             'md:hidden absolute left-1/2 -translate-x-1/2 flex-centered z-30 ' +
