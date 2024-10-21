@@ -89,7 +89,7 @@ function Footer({ light = false }) {
           ))}
         </div>
       </Marquee>
-      <div className='flex flex-col sm:flex-row justify-between items-center sm:items-start px-9 pt-16  pb-1 max-w-5xl mx-auto'>
+      <div className='flex flex-col sm:flex-row justify-between items-center sm:items-start px-9 pt-16  pb-1 max-w-5xl mx-auto text-center'>
         <p className='font-inkination uppercase text-[0.8rem]'>
           Site web designé par{' '}
           <a className='underline' href='https://mateo.tiedra.com/'>

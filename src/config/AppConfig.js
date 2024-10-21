@@ -1,6 +1,63 @@
-export const LATEST_NEWS_LINKS = JSON.parse(
-  process.env.REACT_APP_LATEST_NEWS_LINKS
-);
+import { FaDeezer, FaSoundcloud, FaSpotify } from 'react-icons/fa6';
+import { SiApplemusic } from 'react-icons/si';
 
-console.log(process.env.REACT_APP_PARTNERS_LINKS);
-export const PARTNERS_LINKS = JSON.parse(process.env.REACT_APP_PARTNERS_LINKS);
+export const LATEST_NEWS_LINKS = [
+  'https://www.instagram.com/p/DAGtRJkME2F/',
+  'https://www.instagram.com/p/C4qTVYxqVcT/',
+];
+
+export const PAST_EVENTS = [
+  {
+    poster: '/images/posters/prelude24.png',
+  },
+  {
+    poster: '/images/posters/prelude24.png',
+  },
+];
+
+export const PLAYLISTS = [
+  {
+    platform: 'Spotify',
+    icon: FaSpotify,
+    url: 'https://open.spotify.com/playlist/2YqOHVRiNXruOVKvNDhjLT?si=y7uvsK7aQFG3-NfN0uuY7A',
+  },
+  {
+    platform: 'Apple Music',
+    icon: SiApplemusic,
+    url: 'https://music.apple.com/ch/playlist/arti-hys-selected/pl.u-xlyNqM3To4LA8vE',
+    color: '#d60017',
+  },
+  {
+    platform: 'Deezer',
+    icon: FaDeezer,
+    url: 'https://www.deezer.com/fr/playlist/12428836523',
+    color: '#a238ff',
+  },
+];
+
+export const PARTNERS_LINKS = [
+  {
+    url: 'https://www.enzo-location.ch/',
+    src: '/images/partners/enzo-loca.png',
+  },
+  {
+    url: 'https://www.infomaniak.com/fr/',
+    src: '/images/partners/infmaniak.svg',
+  },
+  {
+    url: 'https://engagement.migros.ch/fr/pour-cent-culturel',
+    src: '/images/partners/migros.png',
+  },
+  { url: 'https://www.makita.ch/', src: '/images/partners/makita.jpg' },
+  { url: 'https://www.morand.ch/', src: '/images/partners/morand.png' },
+  {
+    url: 'https://www.forum-epfl.ch/',
+    src: '/images/partners/forum.svg',
+  },
+  { url: 'https://agepoly.ch/', src: '/images/partners/agep.svg' },
+  { url: 'https://p-p-s.ch/', src: '/images/partners/pps.png' },
+  {
+    url: 'https://signature-acoustique.ch/',
+    src: '/images/partners/accoustique.png',
+  },
+];

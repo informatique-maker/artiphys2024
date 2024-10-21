@@ -84,11 +84,11 @@
 }
 
 .pb-h2 {
-  @apply pb-4;
+  @apply pb-6;
 }
 
 .pb-h3 {
-  @apply pb-2;
+  @apply pb-4;
 }
 
 .art-border {

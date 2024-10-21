@@ -4,10 +4,17 @@ import Marquee from 'react-fast-marquee';
 import { InstagramEmbed } from 'react-social-media-embed';
 
 import Footer from '../../components/Footer';
-import blackLogo from '../../assets/images/dark-logo.png';
 import Navbar from '../../components/Navbar';
 
-import { LATEST_NEWS_LINKS } from '../../config/AppConfig';
+import blackLogo from '../../assets/images/dark-logo.png';
+
+import {
+  LATEST_NEWS_LINKS,
+  PAST_EVENTS,
+  PLAYLISTS,
+} from '../../config/AppConfig';
+import { SiApplemusic } from 'react-icons/si';
+import { Spotify } from 'react-spotify-embed';
 
 const MarqueeContent = () => {
   return (
@@ -19,6 +26,7 @@ const MarqueeContent = () => {
     </div>
   );
 };
+
 const HeroSection = () => {
   return (
     <div className='flex flex-col items-center'>
@@ -82,11 +90,60 @@ const LatestNewsSection = () => {
   return (
     <div className='light-container' id='news'>
       <div className='section-container flex-centered'>
-        <h2 className='pb-h2 text-center'>Notre Actu</h2>
-        <div>
+        <h2 className='pb-h2 text-center'>Notre actu</h2>
+        <div className='flex flex-row flex-wrap items-center justify-center gap-6'>
           {LATEST_NEWS_LINKS.map((link, index) => (
             <InstagramEmbed key={index} url={link} width={328} />
           ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const PastEventsSection = () => {
+  return (
+    <div id='past-events'>
+      <div className='section-container flex-centered'>
+        <h2 className='pb-h2 text-center'>Évenements passés</h2>
+        <div className='flex flex-row flex-wrap items-center justify-center gap-8'>
+          {PAST_EVENTS.map((link, index) => (
+            <img key={index} src={link.poster} alt='poster' className='w-56' />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const OurPlaylistSections = () => {
+  return (
+    <div className='light-container' id='playlists'>
+      <div className='section-container flex-centered '>
+        <h2 className='pb-h2 text-center'>Notre playlist 2024</h2>
+        <Spotify
+          width='100%'
+          link='https://open.spotify.com/playlist/2YqOHVRiNXruOVKvNDhjLT'
+          className='max-w-[800px]'
+        />
+        <div className='flex flex-row flex-wrap items-center gap-16 justify-around pt-6'>
+          {PLAYLISTS.map((link, index) =>
+            index === 0 ? (
+              <></>
+            ) : (
+              <a
+                href={link.url}
+                style={{ color: link.color }}
+                className='flex flex-col items-center gap-2'
+              >
+                {React.createElement(link.icon, {
+                  size: 80,
+                  fill: link.color,
+                })}
+                <p className='underline'>{link.platform}</p>
+              </a>
+            )
+          )}
         </div>
       </div>
     </div>
@@ -99,6 +156,8 @@ function Home() {
       <Navbar />
       <HeroSection />
       <LatestNewsSection />
+      <PastEventsSection />
+      <OurPlaylistSections />
       <Footer />
     </>
   );
