@@ -89,7 +89,7 @@ const LatestNewsSection = () => {
           <script src='https://cdn.lightwidget.com/widgets/lightwidget.js'></script>
           <iframe
             title='instawidget'
-            src='//lightwidget.com/widgets/84604285b9395a7c8c9bd2afff0a1268.html'
+            src='https://cdn.lightwidget.com/widgets/84604285b9395a7c8c9bd2afff0a1268.html'
             allowtransparency='true'
             class='lightwidget-widget'
             style={{
