@@ -114,12 +114,12 @@ const PastEventsSection = () => {
     <div id='past-events'>
       <div className='section-container flex-centered'>
         <h2 className='pb-h2 text-center'>Évenements passés</h2>
-        <div className='flex flex-row flex-wrap items-start justify-center gap-16'>
+        <div className='flex flex-row flex-wrap items-start justify-start gap-16'>
           {PAST_EVENTS.map((event, index) => (
-            <div className='flex flex-row-reverse gap-4 items-start max-w-md'>
-              <div className='flex flex-col '>
+            <div className='flex flex-col-reverse sm:flex-row-reverse gap-4 items-center sm:items-start max-w-md'>
+              <div className='flex flex-col items-center sm:items-start'>
                 <h3 className='pb-h3'>{event.title}</h3>
-                <div className='flex flex-row flex-wrap  gap-4 h-full'>
+                <div className='flex flex-row flex-wrap justify-center sm:justify-start gap-4 h-full'>
                   {event.artists.map((artist, index) => (
                     <a
                       href={artist.url}
