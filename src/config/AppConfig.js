@@ -1,4 +1,4 @@
-import { FaDeezer, FaSoundcloud, FaSpotify } from 'react-icons/fa6';
+import { FaDeezer, FaSpotify } from 'react-icons/fa6';
 import { SiApplemusic } from 'react-icons/si';
 
 export const LATEST_NEWS_LINKS = [

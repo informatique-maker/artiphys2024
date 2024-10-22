@@ -2,6 +2,7 @@ import React from 'react';
 
 import Marquee from 'react-fast-marquee';
 import { InstagramEmbed } from 'react-social-media-embed';
+import { Spotify } from 'react-spotify-embed';
 
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
@@ -13,8 +14,6 @@ import {
   PAST_EVENTS,
   PLAYLISTS,
 } from '../../config/AppConfig';
-import { SiApplemusic } from 'react-icons/si';
-import { Spotify } from 'react-spotify-embed';
 
 const MarqueeContent = () => {
   return (
@@ -47,8 +46,8 @@ const HeroSection = () => {
         <div className='border-solid border-dark border-t-4 border-b-4 flex'>
           {Array(5)
             .fill(1)
-            .map((i) => (
-              <MarqueeContent key={i} />
+            .map((_, index) => (
+              <MarqueeContent key={index} />
             ))}
         </div>
       </Marquee>
@@ -129,12 +128,13 @@ const OurPlaylistSections = () => {
         <div className='flex flex-row flex-wrap items-center gap-16 justify-around pt-6'>
           {PLAYLISTS.map((link, index) =>
             index === 0 ? (
-              <></>
+              <React.Fragment key={index}></React.Fragment>
             ) : (
               <a
                 href={link.url}
                 style={{ color: link.color }}
                 className='flex flex-col items-center gap-2'
+                key={index}
               >
                 {React.createElement(link.icon, {
                   size: 80,

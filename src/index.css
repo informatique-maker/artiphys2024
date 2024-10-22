@@ -49,7 +49,7 @@
     @apply font-inkination uppercase font-black text-h1 leading-heading;
   }
   h2 {
-    @apply font-inkination font-bold text-[2.7rem] sm:text-[3rem] md:text-h2 leading-heading uppercase;
+    @apply font-inkination font-bold text-[2.3rem] sm:text-[3rem] md:text-h2 leading-heading uppercase;
   }
   h3 {
     @apply font-inkination font-bold text-h3 leading-heading uppercase;

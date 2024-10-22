@@ -11,6 +11,10 @@ const NAV_LINKS = [
     text: 'Actu',
   },
   {
+    url: '/association',
+    text: "L'association",
+  },
+  {
     url: '/partenaires',
     text: 'Partenaires',
   },
@@ -52,8 +56,12 @@ const Navbar = () => {
             </div>
             {/* Desktop Menu */}
             <div className='hidden md:flex items-center space-x-6'>
-              {NAV_LINKS.map((link) => (
-                <a href={link.url} className='text-dark hover:text-primary'>
+              {NAV_LINKS.map((link, i) => (
+                <a
+                  href={link.url}
+                  className='text-dark hover:text-primary'
+                  key={i}
+                >
                   <h4>{link.text}</h4>
                 </a>
               ))}
@@ -74,7 +82,7 @@ const Navbar = () => {
           className='md:hidden transition-all overflow-hidden border-solid border-dark border-3 relative'
           style={{ height: isOpen ? '75vh' : 0 }}
         >
-          <div className='h-[75vh] flex flex-col justify-center items-center pb-20 gap-12'>
+          <div className='h-[75vh] flex flex-col justify-center items-center pb-12 gap-10'>
             {NAV_LINKS.map((link) => (
               <HashLink to={link.url} className='text-dark hover:text-primary'>
                 <h3>{link.text}</h3>

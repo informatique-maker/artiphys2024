@@ -5,6 +5,7 @@ import ErrorHandlerWrapper from './ErrorHandler/ErrorHandlerWrapper';
 import Home from './pages/Home/Home';
 import Partners from './pages/Partners/Partners';
 import Prevention from './pages/Prevention/Prevention';
+import Association from './pages/Association/Association';
 import Contact from './pages/Contact/Contact';
 
 // Manage routing
@@ -17,6 +18,7 @@ function App() {
           <Route path='/partenaires' element={<Partners />} />
           <Route path='/prevention' element={<Prevention />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/association' element={<Association />} />
         </Routes>
       </ErrorHandlerWrapper>
     </Router>
