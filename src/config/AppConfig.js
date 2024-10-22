@@ -9,9 +9,63 @@ export const LATEST_NEWS_LINKS = [
 export const PAST_EVENTS = [
   {
     poster: '/images/posters/prelude24.png',
+    title: 'Prelude',
+    artists: [
+      {
+        name: 'Paranoise',
+        url: 'https://www.instagram.com/paranoise.system/',
+      },
+    ],
   },
   {
-    poster: '/images/posters/prelude24.png',
+    poster: '/images/posters/artiphys24.png',
+    title: 'Artiphys 2024',
+    artists: [
+      {
+        name: 'Calling Marian',
+        url: 'https://www.instagram.com/callingmarian/',
+      },
+      {
+        name: 'Durdenhauer',
+        url: 'https://www.instagram.com/durdenhauer/',
+      },
+      {
+        name: 'Meyem',
+        url: 'https://www.instagram.com/meyem_lt/',
+      },
+      {
+        name: 'Desire',
+        url: 'https://www.instagram.com/julie_desire_/',
+      },
+      {
+        name: 'Disse',
+        url: 'https://www.instagram.com/disse2620/',
+      },
+      {
+        name: 'Entelechia',
+        url: 'https://www.instagram.com/entelechia____/',
+      },
+      {
+        name: 'Nothan Solo',
+        url: 'https://www.instagram.com/nothansolo_/',
+      },
+      {
+        name: 'E-garbage',
+        url: 'https://www.instagram.com/e_garbage_/',
+      },
+      {
+        name: 'Jabrome',
+        url: 'https://www.instagram.com/jabrome.jpg/',
+      },
+      {
+        name: 'Nahomi',
+        url: 'https://www.instagram.com/nahomi.music/',
+      },
+      {
+        name: 'Monica Creampie',
+        url: 'https://www.instagram.com/monicacreampie/',
+      },
+    ],
   },
 ];
 

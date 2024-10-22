@@ -61,7 +61,7 @@ const HeroSection = () => {
           <h3 className='uppercase'>FESTIVALIER.X.ES</h3>
         </div>
         <div className='flex flex-col items-center flex-1'>
-          <h1>4</h1>
+          <h1>3</h1>
           <h3 className='uppercase'>Bars</h3>
         </div>
       </div>
@@ -90,10 +90,19 @@ const LatestNewsSection = () => {
     <div className='light-container' id='news'>
       <div className='section-container flex-centered'>
         <h2 className='pb-h2 text-center'>Notre actu</h2>
-        <div className='flex flex-row flex-wrap items-center justify-center gap-6'>
-          {LATEST_NEWS_LINKS.map((link, index) => (
-            <InstagramEmbed key={index} url={link} width={328} />
-          ))}
+        <div className='w-full aspect-[1/1] max-w-xl'>
+          <script src='https://cdn.lightwidget.com/widgets/lightwidget.js'></script>
+          <iframe
+            title='instawidget'
+            src='//lightwidget.com/widgets/84604285b9395a7c8c9bd2afff0a1268.html'
+            allowtransparency='true'
+            class='lightwidget-widget'
+            style={{
+              width: '100%',
+              height: '100%',
+              border: 0,
+            }}
+          ></iframe>
         </div>
       </div>
     </div>
@@ -105,9 +114,31 @@ const PastEventsSection = () => {
     <div id='past-events'>
       <div className='section-container flex-centered'>
         <h2 className='pb-h2 text-center'>Évenements passés</h2>
-        <div className='flex flex-row flex-wrap items-center justify-center gap-8'>
-          {PAST_EVENTS.map((link, index) => (
-            <img key={index} src={link.poster} alt='poster' className='w-56' />
+        <div className='flex flex-row flex-wrap items-start justify-center gap-16'>
+          {PAST_EVENTS.map((event, index) => (
+            <div className='flex flex-row-reverse gap-4 items-start max-w-md'>
+              <div className='flex flex-col '>
+                <h3 className='pb-h3'>{event.title}</h3>
+                <div className='flex flex-row flex-wrap  gap-4 h-full'>
+                  {event.artists.map((artist, index) => (
+                    <a
+                      href={artist.url}
+                      target='_blank'
+                      rel='noreferrer'
+                      key={index}
+                    >
+                      {artist.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+              <img
+                key={index}
+                src={event.poster}
+                alt='poster'
+                className='w-40'
+              />
+            </div>
           ))}
         </div>
       </div>
