@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Marquee from 'react-fast-marquee';
-import { InstagramEmbed } from 'react-social-media-embed';
 import { Spotify } from 'react-spotify-embed';
 
 import Footer from '../../components/Footer';
@@ -9,11 +8,7 @@ import Navbar from '../../components/Navbar';
 
 import blackLogo from '../../assets/images/dark-logo.png';
 
-import {
-  LATEST_NEWS_LINKS,
-  PAST_EVENTS,
-  PLAYLISTS,
-} from '../../config/AppConfig';
+import { PAST_EVENTS, PLAYLISTS } from '../../config/AppConfig';
 
 const MarqueeContent = () => {
   return (

@@ -3,12 +3,12 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 
-const TextSection = ({ title, text, light = false }) => (
+/* const TextSection = ({ title, text, light = false }) => (
   <div className='flex flex-col flex-centered max-w-sm '>
     <h3 className='pb-h3 text-center'>{title}</h3>
     <p className='text-center'>{text}</p>
   </div>
-);
+); */
 
 function Association() {
   return (
