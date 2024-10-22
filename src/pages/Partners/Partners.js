@@ -32,7 +32,27 @@ function Partners() {
           ))}
         </div>
       </div>
-      <Footer light />
+      <div className='light-container'>
+        <div className='section-container'>
+          <h3 className=' pb-h3 text-center'>Rejoindre l'aventure</h3>
+          <p className='text-center pb-6'>
+            Nous sommes toujours à la recherche de nouveaux partenaires avec qui
+            collaborer. Si vous souhaitez soutenir l'association Artiphys et
+            participer à nos événements, n'hésitez pas à nous contacter. Vous
+            trouverez plus d'informations dans notre dossier de collaboration{' '}
+            <a
+              href={`${process.env.PUBLIC_URL}/pdfs/what-is-artiphys.pdf`}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-primary underline'
+            >
+              juste ici
+            </a>
+            .
+          </p>
+        </div>
+      </div>
+      <Footer />
     </>
   );
 }

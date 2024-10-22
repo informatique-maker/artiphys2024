@@ -21,7 +21,6 @@ function Prevention() {
           ses événements et dans l'association.
         </p>
       </div>
-
       <div className='light-container'>
         <div className='section-container'>
           <h3 className=' pb-h3 text-center'>RESPECT EN MILIEU FESTIF</h3>
