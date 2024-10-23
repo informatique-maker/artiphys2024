@@ -14,6 +14,7 @@ function Association() {
   return (
     <>
       <Navbar />
+      <img src='/images/artiteam.png' alt='artiteam' className='w-full' />
       <div className='section-container'>
         <h2 className='pb-h2 text-center'>L'association</h2>
         <p className='text-center'>

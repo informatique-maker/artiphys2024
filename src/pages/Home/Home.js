@@ -35,7 +35,6 @@ const HeroSection = () => {
           <source src='/videos/home.mp4' type='video/mp4' />
           Your browser does not support the video tag.
         </video>
-        <h1 className='text-[18vw] hidden'>Artiphys</h1>
       </div>
       <Marquee>
         <div className='border-solid border-dark border-t-4 border-b-4 flex'>
