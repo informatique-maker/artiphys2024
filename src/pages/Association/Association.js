@@ -14,7 +14,6 @@ function Association() {
   return (
     <>
       <Navbar />
-      <img src='/images/artiteam.png' alt='artiteam' className='w-full' />
       <div className='section-container'>
         <h2 className='pb-h2 text-center'>L'association</h2>
         <p className='text-center'>
@@ -25,7 +24,7 @@ function Association() {
           phare le festival Artiphys qui se tiendra en mars 2025.
         </p>
       </div>
-
+      <img src='/images/artiteam.png' alt='artiteam' className='w-full' />
       <div className='light-container'>
         <div className='section-container'>
           <h3 className=' pb-h3 text-center'>Notre responsabilité</h3>
