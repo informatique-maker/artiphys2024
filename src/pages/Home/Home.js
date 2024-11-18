@@ -9,6 +9,7 @@ import Navbar from '../../components/Navbar';
 import blackLogo from '../../assets/images/dark-logo.png';
 
 import { PAST_EVENTS, PLAYLISTS } from '../../config/AppConfig';
+import OneTimeAlert from '../../components/OneTimeAlert';
 
 const MarqueeContent = () => {
   return (
@@ -178,6 +179,16 @@ const OurPlaylistSections = () => {
 function Home() {
   return (
     <>
+      <OneTimeAlert
+        id='Artiboule'
+        title='Artiboule'
+        text='La billeterie pour Artiboule est enfin ouverte ! Chope ta preloc avant qu il ne soit trop tard ;)'
+        actionText="J'y vais direct"
+        closeText='Pas intéressé.e'
+        to='https://infomaniak.events/shop/QJub3qPDi9/'
+        startDate='2024-11-20'
+        endDate='2024-11-28'
+      />
       <Navbar />
       <HeroSection />
       <LatestNewsSection />

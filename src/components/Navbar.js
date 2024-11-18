@@ -7,6 +7,10 @@ import { HashLink } from 'react-router-hash-link';
 
 const NAV_LINKS = [
   {
+    url: 'https://infomaniak.events/shop/QJub3qPDi9/',
+    text: 'Billeterie',
+  },
+  {
     url: '/#news',
     text: 'Actu',
   },
@@ -82,7 +86,7 @@ const Navbar = () => {
           className='md:hidden transition-all overflow-hidden border-solid border-dark border-3 relative'
           style={{ height: isOpen ? '75vh' : 0 }}
         >
-          <div className='h-[75vh] flex flex-col justify-center items-center pb-12 gap-10'>
+          <div className='h-[75vh] flex flex-col justify-between items-center pt-8 pb-20 '>
             {NAV_LINKS.map((link) => (
               <HashLink to={link.url} className='text-dark hover:text-primary'>
                 <h3>{link.text}</h3>
