@@ -14,7 +14,9 @@ import OneTimeAlert from '../../components/OneTimeAlert';
 const MarqueeContent = () => {
   return (
     <div className='flex items-center gap-3 py-1 pr-3 bg-base'>
-      <h3 className='pb-0 text-xl font-semibold text-dark'>Artiphys 2025</h3>
+      <h3 className='pb-0 text-xl font-semibold text-dark'>
+        Artiphys 33e édition
+      </h3>
       <img src={blackLogo} className='h-[0.9rem]' alt='logo' />
       <h3 className='pb-0 text-xl font-semibold text-dark'>mars 2025</h3>
       <img src={blackLogo} className='h-[0.9rem]' alt='logo' />
@@ -111,7 +113,13 @@ const PastEventsSection = () => {
         <h2 className='pb-h2 text-center'>Évenements passés</h2>
         <div className='flex flex-row flex-wrap items-start justify-start gap-16'>
           {PAST_EVENTS.map((event, index) => (
-            <div className='flex flex-col-reverse sm:flex-row-reverse gap-4 items-center sm:items-start max-w-md'>
+            <div className='flex flex-col sm:flex-row gap-4 items-center sm:items-start max-w-md w-full'>
+              <img
+                key={index}
+                src={event.poster}
+                alt='poster'
+                className='w-40'
+              />
               <div className='flex flex-col items-center sm:items-start'>
                 <h3 className='pb-h3'>{event.title}</h3>
                 <div className='flex flex-row flex-wrap justify-center sm:justify-start gap-4 h-full'>
@@ -127,12 +135,14 @@ const PastEventsSection = () => {
                   ))}
                 </div>
               </div>
-              <img
-                key={index}
-                src={event.poster}
-                alt='poster'
-                className='w-40'
-              />
+              <button
+                className='btn-primary'
+                onClick={() => {
+                  window.location.href = event.url;
+                }}
+              >
+                Voir les photos
+              </button>
             </div>
           ))}
         </div>

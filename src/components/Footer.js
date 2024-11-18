@@ -55,6 +55,13 @@ function Footer({ light = false }) {
               </a>
               <a
                 className='flex flex-row items-center text-inherit'
+                href='https://www.tiktok.com/@artiphysfestival'
+              >
+                Tiktok
+              </a>
+
+              <a
+                className='flex flex-row items-center text-inherit'
                 href='https://www.youtube.com/channel/UCoAJSh63lJc4ZMoQnGyGqCQ'
               >
                 Youtube
@@ -97,7 +104,7 @@ function Footer({ light = false }) {
           </a>
         </p>
         <p className='font-inkination uppercase text-[0.8rem]'>
-          Copyright © Artiphys 2024
+          Copyright © Artiphys 2025
         </p>
       </div>
     </div>

@@ -2,6 +2,7 @@ import React from 'react';
 
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
+import { HashLink } from 'react-router-hash-link';
 
 /* const TextSection = ({ title, text, light = false }) => (
   <div className='flex flex-col flex-centered max-w-sm '>
@@ -19,27 +20,40 @@ function Association() {
         <p className='text-center'>
           Artiphys est une association étudiante à but non lucratif, et un
           centre culturel dynamique de l'École polytechnique fédérale de
-          Lausanne (EPFL). Composée de 28 membres permanents, elle organise
+          Lausanne (EPFL). Composée de 29 membres permanents, elle organise
           divers événements tout au long de l'année académique, avec pour moment
           phare le festival Artiphys qui se tiendra en mars 2025.
         </p>
       </div>
-      <img src='/images/artiteam.png' alt='artiteam' className='w-full' />
+      <img
+        className='md:hidden w-full'
+        src='/images/artiteam.png'
+        alt='artiteam'
+      />
+      <img
+        className='hidden md:block w-full'
+        src='/images/artiteam-banner.png'
+        alt='artiteam'
+      />
       <div className='light-container'>
         <div className='section-container'>
           <h3 className=' pb-h3 text-center'>Notre responsabilité</h3>
           <p className='text-center pb-6'>
-            L'environnement est l'affaire de tous. C'est pourquoi, entre autres,
-            lors de tous nos événements, toutes les boissons sont servies dans
-            des gobelets réutilisables. Aucun artiste ne prend l'avion. Nous
-            limitons notre impact. Nous garantissons la SÉCURITÉ de notre
-            public. Les membres du personnel sont formés ou spécialisés dans la
-            prévention. Des préservatifs Cup sont distribués gratuitement. La
-            sécurité est assurée par des services spécialisés. Nous sommes
-            jeunes et audacieux. C'est pourquoi nous mettons en avant des
-            messages de santé publique. Tous les participants au festival
-            doivent signer une charte de comportement approprié, avec une
-            politique de tolérance zéro pour tout comportement inapproprié.
+            L'environnement est l'affaire de tout·e·s. C'est pourquoi, entre
+            autres, lors de tous nos événements, toutes les boissons sont
+            servies dans des gobelets réutilisables. Aucun·e artiste ne prend
+            l'avion. Nous limitons notre impact. Nous garantissons la SÉCURITÉ
+            de notre public. Les membres du personnel sont formé·e·s ou
+            spécialisé·e·s dans la prévention. Des préservatifs Cup sont
+            distribués gratuitement. La sécurité est assurée par des services
+            spécialisés. Nous sommes jeunes et audacieux·se. C'est pourquoi nous
+            mettons en avant des messages de santé publique. Tout·e·s les
+            participant·e·s au festival doivent signer une{' '}
+            <HashLink to='/prevention' className='underline text-primary'>
+              charte de comportement approprié
+            </HashLink>
+            , avec une politique de tolérance zéro pour tout comportement
+            inapproprié.
           </p>
         </div>
       </div>

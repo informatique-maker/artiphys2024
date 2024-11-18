@@ -119,6 +119,10 @@
   @apply flex justify-center items-center;
 }
 
+.btn-primary {
+  @apply bg-primary hover:text-base py-2 px-4 rounded;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
