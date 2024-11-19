@@ -135,14 +135,14 @@ const PastEventsSection = () => {
                   ))}
                 </div>
               </div>
-              <button
+              {/* <button
                 className='btn-primary'
                 onClick={() => {
                   window.location.href = event.url;
                 }}
               >
                 Voir les photos
-              </button>
+              </button> */}
             </div>
           ))}
         </div>
