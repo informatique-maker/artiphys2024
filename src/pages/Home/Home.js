@@ -192,7 +192,7 @@ function Home() {
       <OneTimeAlert
         id='Artiboule'
         title='Artiboule'
-        text='La billeterie pour Artiboule est enfin ouverte ! Chope ta preloc avant qu il ne soit trop tard ;)'
+        text='La billetterie pour Artiboule est enfin ouverte ! Chope ta preloc avant qu il ne soit trop tard ;)'
         actionText="J'y vais direct"
         closeText='Pas intéressé.e'
         to='https://infomaniak.events/shop/QJub3qPDi9/'
