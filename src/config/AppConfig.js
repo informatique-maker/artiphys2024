@@ -91,12 +91,22 @@ export const PLAYLISTS = [
 
 export const PARTNERS_LINKS = [
   {
-    url: 'https://www.enzo-location.ch/',
-    src: '/images/partners/enzo-loca.png',
-  },
-  {
     url: 'https://www.infomaniak.com/fr/',
     src: '/images/partners/infmaniak.svg',
+  },
+  {
+    url: 'https://freitag.ch',
+    src: '/images/partners/freitag.jpg',
+    color: 'black',
+  },
+  {
+    url: 'https://www.forum-epfl.ch/',
+    src: '/images/partners/forum.svg',
+  },
+  { url: 'https://p-p-s.ch/', src: '/images/partners/pps.png' },
+  {
+    url: 'https://www.enzo-location.ch/',
+    src: '/images/partners/enzo-loca.png',
   },
   {
     url: 'https://engagement.migros.ch/fr/pour-cent-culturel',
@@ -104,12 +114,8 @@ export const PARTNERS_LINKS = [
   },
   { url: 'https://www.makita.ch/', src: '/images/partners/makita.jpg' },
   { url: 'https://www.morand.ch/', src: '/images/partners/morand.png' },
-  {
-    url: 'https://www.forum-epfl.ch/',
-    src: '/images/partners/forum.svg',
-  },
+
   { url: 'https://agepoly.ch/', src: '/images/partners/agep.svg' },
-  { url: 'https://p-p-s.ch/', src: '/images/partners/pps.png' },
   {
     url: 'https://signature-acoustique.ch/',
     src: '/images/partners/accoustique.png',
