@@ -8,6 +8,40 @@ export const LATEST_NEWS_LINKS = [
 
 export const PAST_EVENTS = [
   {
+    poster: '/images/posters/artiboule24.png',
+    title: 'Artiboule',
+    artists: [
+      {
+        name: 'LÜMM',
+        url: 'https://www.instagram.com/lumm.love/',
+      },
+      {
+        name: 'B3LO',
+        url: 'https://www.instagram.com/owbelo/',
+      },
+      {
+        name: 'DJ NOKAP',
+        url: 'https://www.instagram.com/p4k_0/',
+      },
+      {
+        name: 'Collectif alps',
+        url: 'https://www.instagram.com/collectifalps/',
+      },
+      {
+        name: 'Dean Watt',
+        url: 'https://www.instagram.com/deanwatt_/',
+      },
+      {
+        name: 'Agolino',
+        url: 'https://www.instagram.com/loucagolino/',
+      },
+      {
+        name: 'Enji le fils',
+        url: 'https://www.instagram.com/enjilefils/',
+      },
+    ],
+  },
+  {
     poster: '/images/posters/prelude24.png',
     title: 'Prelude',
     artists: [
