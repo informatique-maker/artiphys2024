@@ -3,6 +3,7 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import { HashLink } from 'react-router-hash-link';
+import { COMITTEE_MEMBERS } from '../../config/AppConfig';
 
 /* const TextSection = ({ title, text, light = false }) => (
   <div className='flex flex-col flex-centered max-w-sm '>
@@ -12,6 +13,7 @@ import { HashLink } from 'react-router-hash-link';
 ); */
 
 function Association() {
+  console.log('COMITTEE_MEMBERS', COMITTEE_MEMBERS);
   return (
     <>
       <Navbar />
@@ -35,6 +37,44 @@ function Association() {
         src='/images/artiteam-banner.png'
         alt='artiteam'
       />
+      <div className='section-container'>
+        <h2 className='pb-h2 text-center'>Le comité</h2>
+        <div className='flex flex-col items-center gap-16'>
+          {Object.entries(COMITTEE_MEMBERS).map(([sectionName, members]) => (
+            <div>
+              <h3 className='pb-h2 text-center'>{sectionName}</h3>
+              <div className='inline-flex flex-wrap items-stretch gap-5 md:gap-9 justify-center w-full'>
+                {members.map((member) => (
+                  <div
+                    className='flex flex-col items-center '
+                    key={member.name + sectionName}
+                  >
+                    <img
+                      src={member.pic}
+                      alt={member.name}
+                      className='rounded-md w-48 h-48 object-cover'
+                    />
+                    <p className='text-center pb-6 pt-4'>
+                      <strong>{member.name}</strong>
+                      <br />
+                      {member.role}
+                      <br />
+                      <span>
+                        <a
+                          className='text-sm underline'
+                          href={`mailto:${member.email}`}
+                        >
+                          {member.email}
+                        </a>
+                      </span>
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
       <div className='light-container'>
         <div className='section-container'>
           <h3 className=' pb-h3 text-center'>Notre responsabilité</h3>
@@ -57,7 +97,6 @@ function Association() {
           </p>
         </div>
       </div>
-
       <Footer />
     </>
   );

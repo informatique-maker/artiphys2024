@@ -1,10 +1,191 @@
 import { FaDeezer, FaSpotify } from 'react-icons/fa6';
 import { SiApplemusic } from 'react-icons/si';
 
-export const LATEST_NEWS_LINKS = [
-  'https://www.instagram.com/p/DAGtRJkME2F/',
-  'https://www.instagram.com/p/C4qTVYxqVcT/',
-];
+export const COMITTEE_MEMBERS = {
+  Présidence: [
+    {
+      pic: '/images/comittee/noe.jpg',
+      name: 'Noé Boehringer',
+      email: 'noe.boehringer@artiphys.ch',
+      role: 'Co-président',
+    },
+    {
+      pic: '/images/comittee/clelia.jpg',
+      name: 'Clélia Albert',
+      email: 'clelia.albert@artiphys.ch',
+      role: 'Co-président',
+    },
+    {
+      pic: '/images/comittee/hanna.jpg',
+      name: 'Hanna Zwygart',
+      email: 'hanna.zwygart@artiphys.ch',
+      role: 'Trésorière',
+    },
+  ],
+
+  'Vice-présidence': [
+    {
+      pic: '/images/comittee/gloria.jpg',
+      name: 'Gloria De Pontac',
+      email: 'gloria.depontac@artiphys.ch',
+      role: 'Communications',
+    },
+    {
+      pic: '/images/comittee/adrian.jpg',
+      name: 'Adrián Fernández',
+      email: 'adrian.fernandezlojo@artiphys.ch',
+      role: 'Logistique',
+    },
+    {
+      pic: '/images/comittee/dara.jpg',
+      name: 'Dara Goodale',
+      email: 'dara.goodale@artiphys.ch',
+      role: 'Animations',
+    },
+  ],
+
+  Responsables: [
+    {
+      pic: '/images/comittee/rosalie.jpg',
+      name: 'Rosalie Lehnherr',
+      email: 'rosalie.lehnherr@artiphys.ch',
+      role: 'Prog & Loges',
+    },
+    {
+      pic: '/images/comittee/hortense.jpg',
+      name: 'Hortense Liaras',
+      email: 'hortenseliaras@artiphys.ch',
+      role: 'Prog & Loges',
+    },
+    {
+      pic: '/images/comittee/bastien.jpg',
+      name: 'Bastien Gaussent',
+      email: 'bastien.gaussent@artiphys.ch', // added email
+      role: 'Sponsoring',
+    },
+    {
+      pic: '/images/comittee/romain.jpg',
+      name: 'Romain Dufour',
+      email: 'romain.dufour@artiphys.ch', // added email
+      role: 'Sponsoring',
+    },
+    {
+      pic: '/images/comittee/leo.jpg',
+      name: 'Léo Haeni',
+      email: 'leo.haeni@artiphys.ch',
+      role: 'Site & Sécurité',
+    },
+
+    {
+      pic: '/images/comittee/lucas.jpg',
+      name: 'Lucas Shang',
+      email: 'lucas.shang@artiphys.ch',
+      role: 'Matériel et Transports',
+    },
+    {
+      pic: '/images/comittee/maxime.jpg',
+      name: 'Maxime Fanti',
+      email: 'maxime.fanti@artiphys.ch',
+      role: 'Bars',
+    },
+    {
+      pic: '/images/comittee/ahmed.jpg',
+      name: 'Ahmed Elalamy',
+      email: 'ahmed.elalamy@artiphys.ch',
+      role: 'Bars',
+    },
+    {
+      pic: '/images/comittee/xavi.jpg',
+      name: 'Xavi Fuentes',
+      email: 'xavi.fuentes@artiphys.ch', // added email
+      role: 'Catering',
+    },
+    {
+      pic: '/images/comittee/pernelle.jpg',
+      name: 'Pernelle Paget',
+      email: 'pernelle.paget@artiphys.ch', // added email
+      role: 'Catering',
+    },
+    {
+      pic: '/images/comittee/laetitia.jpg',
+      name: 'Laetitia Espinosa',
+      email: 'laetitia.espinosa@artiphys.ch',
+      role: 'Promotions',
+    },
+    {
+      pic: '/images/comittee/johanne.jpg',
+      name: 'Johanne Pinel',
+      email: 'johanne.pinel@artiphys.ch', // added email
+      role: 'Graphisme',
+    },
+    {
+      pic: '/images/comittee/arthur.jpg',
+      name: 'Arthur Taieb',
+      email: 'arthur.taieb@artiphys.ch', // added email
+      role: 'Tech & Elec',
+    },
+    {
+      pic: '/images/comittee/chloe.jpg',
+      name: 'Chloé Cartier',
+      email: 'chloe.cartier@artiphys.ch', // added email
+      role: 'Tech & Elec',
+    },
+    {
+      pic: '/images/comittee/tim.jpg',
+      name: 'Tim Lücking',
+      email: 'tim.lucking@artiphys.ch', // added email
+      role: 'Décorations',
+    },
+    {
+      pic: '/images/comittee/ambre.jpg',
+      name: 'Ambre Sassi',
+      email: 'ambre.sassi@artiphys.ch', // added email
+      role: 'Décorations',
+    },
+    {
+      pic: '/images/comittee/nina.jpg',
+      name: 'Nina Bodenstab',
+      email: 'nina.bodenstab@artiphys.ch', // added email
+      role: 'Prévention & Durabilité',
+    },
+    {
+      pic: '/images/comittee/clara.jpg',
+      name: 'Clara Gottardo',
+      email: 'clara.gottardo@artiphys.ch', // added email
+      role: 'Ressources Humaines',
+    },
+    {
+      pic: '/images/comittee/maena.jpg',
+      name: 'Maena Chavanne',
+      email: 'maena.chavanne@artiphys.ch', // added email
+      role: 'Innovations & Concepts',
+    },
+    {
+      pic: '/images/comittee/mateo.jpg',
+      name: 'Mateo Tiedra',
+      email: 'mateo.tiedra@artiphys.ch',
+      role: 'Webmaster',
+    },
+    {
+      pic: '/images/comittee/jeremy.jpg',
+      name: 'Jeremy Serillon',
+      email: 'jeremy.serillon@artiphys.ch', // added email
+      role: 'Audiovisuel',
+    },
+    {
+      pic: '/images/comittee/alice.jpg',
+      name: 'Alice Savona',
+      email: 'alice.savona@artiphys.ch', // added email
+      role: 'Artivieilles',
+    },
+    {
+      pic: '/images/comittee/theo.jpg',
+      name: 'Théo Altherr',
+      email: 'theo.altherr@artiphys.ch', // added email
+      role: 'Artivieilles',
+    },
+  ],
+};
 
 export const PAST_EVENTS = [
   {
