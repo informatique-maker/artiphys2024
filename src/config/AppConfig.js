@@ -315,6 +315,10 @@ export const PARTNERS_LINKS = [
     color: 'black',
   },
   {
+    url: 'https://skynight.com/',
+    src: '/images/partners/skynight.png',
+  },
+  {
     url: 'https://www.forum-epfl.ch/',
     src: '/images/partners/forum.svg',
   },
