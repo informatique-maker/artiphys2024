@@ -319,21 +319,14 @@ export const PARTNERS_LINKS = [
     src: '/images/partners/skynight.png',
   },
   {
+    url: 'https://ramelet-fils.ch/',
+    src: '/images/partners/ramelet.png',
+  },
+  {
     url: 'https://www.forum-epfl.ch/',
     src: '/images/partners/forum.svg',
   },
   { url: 'https://p-p-s.ch/', src: '/images/partners/pps.png' },
-  {
-    url: 'https://www.enzo-location.ch/',
-    src: '/images/partners/enzo-loca.png',
-  },
-  {
-    url: 'https://engagement.migros.ch/fr/pour-cent-culturel',
-    src: '/images/partners/migros.png',
-  },
-  { url: 'https://www.makita.ch/', src: '/images/partners/makita.jpg' },
-  { url: 'https://www.morand.ch/', src: '/images/partners/morand.png' },
-
   { url: 'https://agepoly.ch/', src: '/images/partners/agep.svg' },
   {
     url: 'https://signature-acoustique.ch/',
