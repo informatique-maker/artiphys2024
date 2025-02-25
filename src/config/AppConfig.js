@@ -323,6 +323,10 @@ export const PARTNERS_LINKS = [
     src: '/images/partners/ramelet.png',
   },
   {
+    url: 'https://www.tobler-ag.com/fr/',
+    src: '/images/partners/tobler.png',
+  },
+  {
     url: 'https://www.forum-epfl.ch/',
     src: '/images/partners/forum.svg',
   },

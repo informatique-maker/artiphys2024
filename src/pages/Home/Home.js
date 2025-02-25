@@ -18,7 +18,7 @@ const MarqueeContent = () => {
         Artiphys 33e édition
       </h3>
       <img src={blackLogo} className='h-[0.9rem]' alt='logo' />
-      <h3 className='pb-0 text-xl font-semibold text-dark'>mars 2025</h3>
+      <h3 className='pb-0 text-xl font-semibold text-dark'>14 mars 2025</h3>
       <img src={blackLogo} className='h-[0.9rem]' alt='logo' />
     </div>
   );
