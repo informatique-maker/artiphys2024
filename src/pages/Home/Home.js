@@ -110,7 +110,7 @@ const PastEventsSection = () => {
   return (
     <div id='past-events'>
       <div className='section-container flex-centered'>
-        <h2 className='pb-h2 text-center'>Évenements passés</h2>
+        <h2 className='pb-h2 text-center'>Évenements</h2>
         <div className='flex flex-row flex-wrap items-start justify-start gap-16'>
           {PAST_EVENTS.map((event, index) => (
             <div className='flex flex-col sm:flex-row gap-4 items-center sm:items-start max-w-md w-full'>

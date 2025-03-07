@@ -189,6 +189,60 @@ export const COMITTEE_MEMBERS = {
 
 export const PAST_EVENTS = [
   {
+    poster: '/images/posters/artiphys25.png',
+    title: 'Artiphys 2025',
+    artists: [
+      {
+        name: 'NHŪ',
+        url: 'https://www.instagram.com/nothing_nhu/',
+      },
+      {
+        name: 'Herr Krank',
+        url: 'https://www.instagram.com/herr.krank/',
+      },
+      {
+        name: 'MZA',
+        url: 'https://www.instagram.com/mza.mp3/',
+      },
+      {
+        name: 'Bass Tong',
+        url: 'https://www.instagram.com/bass.tong/',
+      },
+      {
+        name: 'Agolino',
+        url: 'https://www.instagram.com/loucagolino/',
+      },
+      {
+        name: 'Dean Watt',
+        url: 'https://www.instagram.com/deanwatt_/',
+      },
+      {
+        name: 'THAUF',
+        url: 'https://www.instagram.com/thauf.music/',
+      },
+      {
+        name: 'Lait et Sukr',
+        url: 'https://www.instagram.com/laitetsukr/',
+      },
+      {
+        name: 'Kiftif',
+        url: 'https://www.instagram.com/kif.tif/',
+      },
+      {
+        name: 'Redfunktion',
+        url: 'https://www.instagram.com/redfunktion303/',
+      },
+      {
+        name: 'Holivia Mermaid',
+        url: 'https://www.instagram.com/holivia.ps/',
+      },
+      {
+        name: 'Ashley Barbiana',
+        url: 'https://www.instagram.com/ashleybarbiana/',
+      },
+    ],
+  },
+  {
     poster: '/images/posters/artiboule24.png',
     title: 'Artiboule',
     artists: [
