@@ -156,31 +156,22 @@ const OurPlaylistSections = () => {
     <div className='light-container' id='playlists'>
       <div className='section-container flex-centered '>
         <h2 className='pb-h2 text-center'>Notre playlist 2024</h2>
+        <div className='w-full max-w-[800px] mb-8'>
+          <iframe
+            title='Soundcloud Artiphys Playlist'
+            width='100%'
+            height='400'
+            scrolling='no'
+            frameborder='no'
+            allow='autoplay'
+            src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1981167984&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
+          />
+        </div>
         <Spotify
           width='100%'
-          link='https://open.spotify.com/playlist/2YqOHVRiNXruOVKvNDhjLT'
+          link='https://open.spotify.com/playlist/1aUVDHI51an3FBYPmdkJKg'
           className='max-w-[800px]'
         />
-        <div className='flex flex-row flex-wrap items-center gap-16 justify-around pt-6'>
-          {PLAYLISTS.map((link, index) =>
-            index === 0 ? (
-              <React.Fragment key={index}></React.Fragment>
-            ) : (
-              <a
-                href={link.url}
-                style={{ color: link.color }}
-                className='flex flex-col items-center gap-2'
-                key={index}
-              >
-                {React.createElement(link.icon, {
-                  size: 80,
-                  fill: link.color,
-                })}
-                <p className='underline'>{link.platform}</p>
-              </a>
-            )
-          )}
-        </div>
       </div>
     </div>
   );
