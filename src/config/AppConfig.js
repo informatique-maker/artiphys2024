@@ -377,6 +377,10 @@ export const PARTNERS_LINKS = [
     src: '/images/partners/ramelet.png',
   },
   {
+    url: 'https://byfassbind.com/fr/',
+    src: '/images/partners/fassbind.png',
+  },
+  {
     url: 'https://www.tobler-ag.com/fr/',
     src: '/images/partners/tobler.png',
   },
