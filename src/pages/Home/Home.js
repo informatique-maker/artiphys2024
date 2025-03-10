@@ -58,7 +58,7 @@ const HeroSection = () => {
           <h3 className='uppercase'>FESTIVALIER.X.ES</h3>
         </div>
         <div className='flex flex-col items-center flex-1'>
-          <h1>3</h1>
+          <h1>4</h1>
           <h3 className='uppercase'>Bars</h3>
         </div>
       </div>
