@@ -26,6 +26,12 @@ function Association() {
           divers événements tout au long de l'année académique, avec pour moment
           phare le festival Artiphys qui se tiendra en mars 2025.
         </p>
+        <p className='text-center'>
+          Les statuts de l'association sont disponibles pour consultation{' '}
+          <a href='/pdfs/statuts.pdf' className='underline'>
+            juste ici
+          </a>
+        </p>
       </div>
       <img
         className='md:hidden w-full'

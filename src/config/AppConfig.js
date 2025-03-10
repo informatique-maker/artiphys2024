@@ -390,8 +390,4 @@ export const PARTNERS_LINKS = [
   },
   { url: 'https://p-p-s.ch/', src: '/images/partners/pps.png' },
   { url: 'https://agepoly.ch/', src: '/images/partners/agep.svg' },
-  {
-    url: 'https://signature-acoustique.ch/',
-    src: '/images/partners/accoustique.png',
-  },
 ];
