@@ -237,7 +237,7 @@ export const PAST_EVENTS = [
         url: 'https://www.instagram.com/holivia.ps/',
       },
       {
-        name: 'Ashley Barbiana',
+        name: 'Ashley Balmain',
         url: 'https://www.instagram.com/ashleybarbiana/',
       },
     ],
