@@ -7,8 +7,8 @@ import { HashLink } from 'react-router-hash-link';
 
 const NAV_LINKS = [
   {
-    url: 'https://infomaniak.events/shop/QJub3qPDi9/',
-    text: 'Billetterie',
+    url: 'https://morii.artiphys.ch/',
+    text: 'ArtiReal',
   },
   {
     url: '/#news',

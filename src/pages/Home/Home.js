@@ -181,14 +181,14 @@ function Home() {
   return (
     <>
       <OneTimeAlert
-        id='Artiboule'
-        title='Artiboule'
-        text='La billetterie pour Artiboule est enfin ouverte ! Chope ta preloc avant qu il ne soit trop tard ;)'
+        id='ArtiReal'
+        title='ArtiReal'
+        text='Suis et partage tes photos de la soirée en scannant ce QR code !'
         actionText="J'y vais direct"
         closeText='Pas intéressé.e'
-        to='https://infomaniak.events/shop/QJub3qPDi9/'
-        startDate='2024-11-20'
-        endDate='2024-11-28'
+        to='https://morii.artiphys.ch/'
+        startDate='2025-03-13'
+        endDate='2025-03-16'
       />
       <Navbar />
       <HeroSection />
