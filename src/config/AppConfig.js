@@ -191,6 +191,8 @@ export const PAST_EVENTS = [
   {
     poster: '/images/posters/artiphys25.png',
     title: 'Artiphys 2025',
+    galleryUrl:
+      'https://drive.google.com/drive/folders/1QZziX4hfTU9djd6675P05JyGh4T4omfk',
     artists: [
       {
         name: 'NHŪ',
