@@ -1,7 +1,7 @@
-# Artiphys website 2024
+# Artiphys website 2025
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Made by Mateo Tiedra. Contact : mateo.tiedra@artiphys.ch or mateo.tiedra@epfl.ch
+Made by Mateo Tiedra and Charline Delamotte. Contact : charline.delamotte@epfl.ch or mateo.tiedra@epfl.ch
 
 ## Available Scripts
 
